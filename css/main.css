@@ -562,7 +562,7 @@ h1.navbar-brand {
     line-height: 26px;
     position: absolute;
     top: 12px;
-    left: 14px;
+    right: 14px;
 }
 
 .fancybox-prev span:before {
@@ -1486,24 +1486,24 @@ textarea.form-control {
         left: 7px;
     }
 
-    .fancybox-prev span {
-        height: 25px;
-        width: 25px;
-    }
-
     .fancybox-next span {
         height: 25px;
         width: 25px;
     }
 
-    .fancybox-prev span:before {
-        font-size: 13px;
-        line-height: 13px;
-        top: 6px;
-        left: 7px;
+    .fancybox-prev span {
+        height: 25px;
+        width: 25px;
     }
 
     .fancybox-next span:before {
+        font-size: 13px;
+        line-height: 13px;
+        top: 6px;
+        right: 7px;
+    }
+
+    .fancybox-prev span:before {
         font-size: 13px;
         line-height: 13px;
         top: 6px;
@@ -1711,4 +1711,9 @@ textarea.form-control {
     .footer-content {
         width: 380px;
     }
+}
+
+
+.wow {
+  visibility: hidden;
 }

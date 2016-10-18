@@ -169,6 +169,28 @@ $(document).ready(function(){
 		}
 	});
 	
+    /* ========================================================================= */
+    /*  Custom scroll slider
+    /* ========================================================================= */
+
+	$(function () {
+	    $('#logolink').click(function () {
+	        var target = $('#body');
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, 2000, 'easeInOutExpo');
+	        return false;
+	    });
+	});
+	$(function () {
+	    $('#homebutton').click(function () {
+	        var target = $('#download');
+	        $('html, body').animate({
+	            scrollTop: target.offset().top - 60
+	        }, 2000, 'easeInOutExpo');
+	        return false;
+	    });
+	});
 });
 
 
@@ -266,25 +288,3 @@ var wow = new WOW ({
 	mobile:       false,       // trigger animations on mobile devices (default is true)
 });
 wow.init();
-
-
-/* ========================================================================= */
-/*  Custom scroll slider
-/* ========================================================================= */
-
-$(function () {
-    $('#logolink').click(function () {
-        var target = $('#body');
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 2000, 'easeInOutExpo');
-        return false;
-    });
-    $('#homebutton').click(function () {
-        var target = $('#download');
-        $('html, body').animate({
-            scrollTop: target.offset().top - 60
-        }, 2000, 'easeInOutExpo');
-        return false;
-    });
-});
