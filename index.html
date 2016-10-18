@@ -1,0 +1,487 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PlexPy</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="A Python based monitoring and tracking tool for Plex Media Server">
+        <meta name="keywords" content="plexpy, plex, monitoring, tracking, stats, notifications, plex monitoring, plex tracking, plex stats, plex notifications">
+        <meta name="author" content="JonnyWong16">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+        <!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/iconmoon.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+	
+    <body id="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a id="logolink" href="#body"><img src="img/logo-plexpy.png" /></a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="#body">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#preview">Preview</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="home-slider">
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+
+						<div class="bg-img bg-grey1"></div>
+
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2 class="animated fadeInDown">PlexPy</h2>
+                                <span class="animated fadeInDown">Monitoring your Plex Media Server</span>
+                                <a id="homebutton" href="#download" class="btn btn-orange btn-effect">Get It Now</a>
+                            </div>
+                        </div>
+						
+					</div>
+					
+
+				</div><!-- /sl-slider -->
+
+			</div><!-- /slider-wrapper -->
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+			
+            <!-- About section -->
+            <section id="about" class="bg-orange text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-11 col-md-offset-1 wow animated fadeInRight">
+                            <div class="welcome-block">
+                                <h2>What is PlexPy?</h2>
+                                <div class="message-body">
+                                    <img src="img/favicon.png" class="pull-left" alt="member">
+                                    <p>
+                                        <strong>PlexPy is a python based web application for monitoring, analytics, and notifications for Plex Media Server.</strong>
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Basically, it is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics.
+                                        Most importantly, these statistics include <em>what</em> has been watched, <em>who</em> watched it, <em>when</em> and <em>where</em> they watched it, and <em>how</em> it was watched.
+                                        The only thing missing is "<em>why</em> they watched it", but who am I to question your 42 plays of <em>Frozen</em>.
+                                        All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server with screenshots.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end About section -->
+
+            <!-- Features section -->
+            <section id="features" class="bg-grey3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="sec-title text-center">
+                            <h2 class="wow animated bounceInLeft">Features</h2>
+                            <p class="wow animated bounceInRight">Teasing some of the key features!</p>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-play fa-3x"></i>
+                                </div>
+                                <h3>Monitoring</h3>
+                                <p>Monitor current activty on your Plex Media Server.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.2s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-list fa-3x"></i>
+                                </div>
+                                <h3>Statistics</h3>
+                                <p>View statistics about your most popular media.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.4s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-history fa-3x"></i>
+                                </div>
+                                <h3>History</h3>
+                                <p>Log activity and watch history for all your users.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-bar-chart fa-3x"></i>
+                                </div>
+
+                                <h3>Graphs</h3>
+                                <p>View your streaming trends with beautiful graphs.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-bell fa-3x"></i>
+                                </div>
+
+                                <h3>Notifications</h3>
+                                <p>Get notified of activity and events on your server.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.5s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-download fa-3x"></i>
+                                </div>
+
+                                <h3>Recently Added</h3>
+                                <p>Know when new content is added to your Plex library.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.7s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-cloud-download fa-3x"></i>
+                                </div>
+
+                                <h3>Sync</h3>
+                                <p>Check synced content to all your mobile devices.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-film fa-3x"></i>
+                                </div>
+
+                                <h3>Media Info</h3>
+                                <p>Examine media info for all the content in your libraries.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 col-md-offset-3 wow animated zoomIn" data-wow-delay="0.6s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-cogs fa-3x"></i>
+                                </div>
+
+                                <h3>Customizable</h3>
+                                <p>Tweak the vast number settings to your liking.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.8s">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <i class="fa fa-desktop fa-3x"></i>
+                                </div>
+
+                                <h3>Cross Platform</h3>
+                                <p>Install on any platform you want that supports Python.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end Features section -->
+
+			<!-- Preview section -->
+			<section id="preview" class="bg-grey2">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center">
+							<h2 class="wow animated bounceInRight">Preview</h2>
+							<p class="wow animated bounceInLeft">See PlexPy in action!</p>
+						</div>
+						
+
+						<ul class="project-wrapper wow animated fadeInUp">
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="PlexPy Homepage" data-fancybox-group="works" href="img/portfolio/Homepage.png">
+                                    <img src="img/portfolio/Homepage.png" class="img-responsive" alt="Monitor current activity and statistics from the homepage.">
+                                    <figcaption class="mask">
+                                        <h3>Homepage</h3>
+                                        <p>Monitor current activity and statistics from the homepage.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="Library Statistics" data-fancybox-group="works" href="img/portfolio/Libraries.png">
+                                    <img src="img/portfolio/Libraries.png" class="img-responsive" alt="View the number of media items in your libraries.">
+                                    <figcaption class="mask">
+                                        <h3>Libraries</h3>
+                                        <p>View the number of media items in your libraries.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="Library Statistics" data-fancybox-group="works" href="img/portfolio/Library.png">
+                                    <img src="img/portfolio/Library.png" class="img-responsive" alt="See detailed statistics about each library.">
+                                    <figcaption class="mask">
+                                        <h3>Library Statistics</h3>
+                                        <p>See detailed statistics about each of your libraries.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="Media Info" data-fancybox-group="works" href="img/portfolio/Info.png">
+                                    <img src="img/portfolio/Info.png" class="img-responsive" alt="Browse and view info about the media in your Plex libraries.">
+                                    <figcaption class="mask">
+                                        <h3>Media Info</h3>
+                                        <p>Browse and view info about the media in your Plex libraries.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="User Statistics" data-fancybox-group="works" href="img/portfolio/Users.png">
+                                    <img src="img/portfolio/Users.png" class="img-responsive" alt="Track the activity of your users.">
+                                    <figcaption class="mask">
+                                        <h3>Users</h3>
+                                        <p>Track the activity of your users.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="User Statistics" data-fancybox-group="works" href="img/portfolio/User.png">
+                                    <img src="img/portfolio/User.png" class="img-responsive" alt="See detailed statistics about each user.">
+                                    <figcaption class="mask">
+                                        <h3>User Statistics</h3>
+                                        <p>See detailed statistics about each user.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="History" data-fancybox-group="works" href="img/portfolio/History.png">
+                                    <img src="img/portfolio/History.png" class="img-responsive" alt="Log detailed watched statistics for all streaming activity.">
+                                    <figcaption class="mask">
+                                        <h3>History</h3>
+                                        <p>Log detailed watched statistics for all streaming activity.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                            <li class="portfolio-item">
+                                <a class="fancybox" title="Graphs" data-fancybox-group="works" href="img/portfolio/Graphs.png">
+                                    <img src="img/portfolio/Graphs.png" class="img-responsive" alt="Analyze trends on your server using beautiful graphs.">
+                                    <figcaption class="mask">
+                                        <h3>Graphs</h3>
+                                        <p>Analyze trends on your server using beautiful graphs.</p>
+                                    </figcaption>
+                                </a>
+                            </li>
+						</ul>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end Preview section -->
+			
+			<!-- Download section -->
+			<section id="download" class="bg-orange text-white">
+				<div class="container">
+					<div class="row">
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Download</h2>
+							<p>Get PlexPy now!</p>
+						</div>
+						
+                        <div class="download-button wow animated fadeInUp">
+                            <a href="https://github.com/JonnyWong16/plexpy" class="btn btn-grey btn-effect">Download now</a>
+		                </div>
+					</div>
+				</div>
+			</section>
+			<!-- end Download section -->
+			
+            <!-- Support section -->
+            <section id="support" class="bg-grey3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="sec-title text-center wow animated fadeInDown">
+                            <h2>Support</h2>
+                            <p>Need help?</p>
+                        </div>
+
+                        <ul class="support-button">
+                            <li class="wow animated zoomIn"><a href="https://github.com/JonnyWong16/plexpy/wiki/Frequently-Asked-Questions-(FAQ)"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://discord.gg/36ggawe"><i class="icon icon-discord fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="https://gitter.im/plexpy/general"><i class="icon icon-gitter fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="https://forums.plex.tv/discussion/169591/plexpy-another-plex-monitoring-program"><i class="icon icon-plex fa-2x"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end Support section -->
+
+            <!-- Donate section -->
+            <section id="donate" class="bg-grey2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="sec-title text-center wow animated fadeInDown">
+                            <h2>Donate</h2>
+                            <p>By me a drink!</p>
+                        </div>
+
+                        <ul class="donate-button">
+                            <li class="wow animated zoomIn"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DG783BMSCU3V4"><i class="fa fa-paypal fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="http://swiftpanda16.tip.me/"><i class="fa fa-bitcoin fa-2x"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end Donate section -->
+			
+		</main>
+		
+		<footer id="footer" class="bg-grey1">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<p>Copyright &copy; 2016 | JonnyWong16</p>
+                        <p>PlexPy is not affiliated with Plex Inc.</p>
+                        <br />
+                        <p>Design and Developed by <a href="http://www.themefisher.com">Themefisher</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
